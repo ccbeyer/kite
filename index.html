@@ -1,8 +1,27 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <script>
+  var clock = document.getElementById("countdown-holder")
+    , targetDate = new Date(2050, 00, 01); // Jan 1, 2050
+ 
+  clock.innerHTML = countdown(targetDate).toString();
+</script>
+
+<script>
+  var clock = document.getElementById("countdown-holder")
+    , targetDate = new Date(2050, 00, 01); // Jan 1, 2050;
+ 
+  clock.innerHTML = countdown(targetDate).toString();
+  setInterval(function(){
+    clock.innerHTML = countdown(targetDate).toString();
+  }, 1000);
+</script>
+  
+</head>
 <body>
 
-<p>followthekite</p>
+<h1 id="countdown-holder"></h1>
 
 </body>
 </html>
