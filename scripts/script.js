@@ -6,7 +6,7 @@ $(function() {
 
   });
 
-  var d = new Date(Date.UTC(2015, 2, 17, 20, 0, 0, 0));
+  var d =  var d = new Date('Tue, 17 Mar 2015 20:00:00 GMT-0400');
   var now = new Date();
   var dif = d.getTime() - now.getTime();
 
